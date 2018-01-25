@@ -14,23 +14,25 @@
     <div id="app"></div>
     <script>
 
-        const MyTitle = function () {
+        const ce = React.createElement
+
+        const MyTitle = function (props) {
             return React.createElement('div', null, 
-                React.createElement('h1', null, 'This is my second component!')
+                ce('h1', null, props.title)
             );
         };
 
         const MyFirstComponent = function () {
-            return React.createElement('div', null,
-                React.createElement(MyTitle),
-                React.createElement(MyTitle),
-                React.createElement(MyTitle),
-                React.createElement(MyTitle)
+            return ce('div', { id: 'my-first-component' },
+                ce(MyTitle, { title: 'Pineapple Express' }),
+                ce(MyTitle, { title: 'Silicon Valley' }),
+                ce(MyTitle, { title: 'Crashing' }),
+                ce(MyTitle, { title: 'Seinfeld' })
             );
         };
 
         ReactDOM.render(
-            React.createElement(MyFirstComponent),
+            ce(MyFirstComponent),
             document.getElementById("app")
         );
     </script>
