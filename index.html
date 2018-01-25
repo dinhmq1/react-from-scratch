@@ -18,16 +18,16 @@
 
         const MyTitle = function (props) {
             return React.createElement('div', null, 
-                ce('h1', null, props.title)
+                ce('h1', { style: { color: props.color } }, props.title)
             );
         };
 
         const MyFirstComponent = function () {
             return ce('div', { id: 'my-first-component' },
-                ce(MyTitle, { title: 'Pineapple Express' }),
-                ce(MyTitle, { title: 'Silicon Valley' }),
-                ce(MyTitle, { title: 'Crashing' }),
-                ce(MyTitle, { title: 'Seinfeld' })
+                ce(MyTitle, { title: 'Pineapple Express', color: 'YellowGreen' }),
+                ce(MyTitle, { title: 'Silicon Valley', color: 'GreenYellow' }),
+                ce(MyTitle, { title: 'Crashing', color: 'peru' }),
+                ce(MyTitle, { title: 'Seinfeld', color: 'Blue' })
             );
         };
 
