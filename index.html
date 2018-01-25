@@ -13,9 +13,19 @@
 <body>
     <div id="app"></div>
     <script>
+
+        const MyTitle = function () {
+            return React.createElement('div', null, 
+                React.createElement('h1', null, 'This is my second component!')
+            );
+        };
+
         const MyFirstComponent = function () {
             return React.createElement('div', null,
-                React.createElement('h1', null, "This is my first component!")
+                React.createElement(MyTitle),
+                React.createElement(MyTitle),
+                React.createElement(MyTitle),
+                React.createElement(MyTitle)
             );
         };
 
