@@ -10,6 +10,9 @@
    "react": "15.5.4",
    "react-dom": "15.5.4"
   },
+  "devDependencies": {
+    "eslint": "3.19.0"
+  },
   "author": "Mike Dinh",
   "license": "ISC"
 }
