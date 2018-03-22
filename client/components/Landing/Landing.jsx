@@ -1,13 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Card } from 'appkit-react';
+import './Landing.css';
 
 const Landing = () => (
-  <div className="app">
-    <div className="landing">
-      <h1>React from Scratch</h1>
-      <input type="text" placeholder="Search" />
-      <Link to="/search">or Browse All</Link>
-    </div>
+  <div id="login-samples" class="login-container login-page">
+    <div />
   </div>
 );
 

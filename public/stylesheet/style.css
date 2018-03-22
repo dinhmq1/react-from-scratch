@@ -14,7 +14,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url(/public/img/bg.jpg);
+    background-image: url(http://gofaastdev.hosting.pwc.com/cc//images/passport_bg.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
