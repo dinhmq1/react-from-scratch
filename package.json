@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write --single-quote --print-width=120 --parser=flow --tab-width=2 \"client/components/**/*.{js,jsx}\"",
-    "lint": "eslint **/*.{js,jsx} --quiet",
+    "lint": "eslint client/components/**/*.{js,jsx} --quiet",
     "build": "webpack",
     "watch": "webpack --watch",
     "dev": "./node_modules/.bin/webpack-dev-server"
